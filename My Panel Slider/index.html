@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Panel Slider</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <!-- Centered page -->
+  <div id="page">
+    <h1> My Panel Slider</h1>
+    <button>
+      <a id="left-panel-link" href="#left-panel">Open left panel</a>
+    </button>
+    <button> 
+      <a id="right-panel-link" href="#right-panel">Open right panel</a>
+    </button> 
+    <hr />
+    <p>Get full usage instructions and source code <a href="https://github.com/eduardomb/jquery-panelslider">here</a></p>
+  </div>
+
+  <!-- Left panel -->
+  <div id="left-panel" class="panel">
+    <h2>Site Navigation Menu</h2>
+    <p>Click anywhere outside panel to close it.</p>
+  </div>
+
+  <!-- Right panel -->
+  <div id="right-panel" class="panel">
+    <h2>My List Items</h2>
+    <p>Clicking outside this panel wont close it because <code>clickClose = false</code></p>
+    <button id="close-panel-bt">Close</button>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/jquery.panelslider.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
