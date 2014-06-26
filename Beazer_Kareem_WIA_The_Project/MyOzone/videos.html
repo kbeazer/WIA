@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Gallery</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/reveal.css" type="text/css">
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <script src="js/modernizr.js" type="text/javascript"></script>
+    <script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
+  </head>
+
+  <body> 
+  	<div id="container" class="welcome">
+  		<a href="#"><h1>The <strong>O</strong>zone</h1></a>
+      <a href="#" id="outButton" data-reveal-id="logOut">Log Out</a>
+
+      <header>
+        <nav>
+          <ul>
+            <li><a href="welcome.html" class="gNav">Current Events</a></li>
+            <li><a href="locator.html" class="gNav">Venue Locator</a></li>
+            <li><a href="#" class="gNav">Video Gallery</a></li>
+            <li><a href="#" data-reveal-id="aboutUs" class="gNav">About Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+      </div>
+
+      <h2 class="heading">Music videos by local artists</h2>
+
+      <div id="videos">
+        <div id="ytplayer"></div>
+        <div class="lineUp">
+          <h3 class="artists">JaWaan Larue - Change The World</h3>
+          <a href="https://www.youtube.com/watch?v=Jhw4x-peo5M" title="Change The World" type="video/mp4">
+              <img src="img/change.jpg" alt="music video">
+          </a>
+        </div>
+
+        <div class="lineUp">
+          <h3 class="artists">JLit - Keep Talking</h3>
+          <a href="https://www.youtube.com/watch?v=wKdpW5TGccE&list=TL-qgeHJqsQ10y0slB4WPe4biqbqwfb5xV" title="Keep Talking">
+              <img src="img/talking.jpg" alt="music video">
+          </a>
+        </div>
+
+        <div class="lineUp">
+          <h3 class="artists">Souljah Bless ft. Skyy High - Babylon Beware</h3>
+          <a href="http://www.youtube.com/watch?v=x-7KLWTAh3g" title="Babylon Beware">
+              <img src="img/babylon.jpg" alt="music video">
+          </a>
+        </div>
+
+        <div class="lineUp">
+          <h3 class="artists">JaWaan Larue ft. Skyy High - Gone Away</h3>
+          <a href="https://www.youtube.com/watch?v=Wyza4cF3_F4&index=4&list=TL-qgeHJqsQ10y0slB4WPe4biqbqwfb5xV" title="Gone Away">
+              <img src="img/gone.jpg" alt="music video">
+          </a>
+        </div>
+
+        <div class="lineUp">
+        <h3 class="artists">Skyy High - Everything's Alright</h3>
+          <a href="https://www.youtube.com/watch?v=Fy07f1D4reY&index=6&list=TL-qgeHJqsQ10y0slB4WPe4biqbqwfb5xV" title="Everything's Alright">
+              <img src="img/skyy.jpg" alt="music video">
+          </a>
+        </div>
+
+        <div class="lineUp">
+          <h3 class="artists">Souljah Bless - Rock My Soul</h3>
+          <a href="http://www.youtube.com/watch?v=dgnsIuuuJ3A" title="Rock My Soul">
+              <img src="img/rock.jpg" alt="music video">
+          </a>
+        </div>
+      </div>
+      
+      <footer>
+        <p><em>The Ozone 2014</em> by Kareem K. Beazer</p>
+      </footer>
+  	</div>
+
+    <div id="aboutUs" class="reveal-modal">
+      <p>The Ozone is a website developed for anyone that lives in the greater Orlando area.  It is an extension of the Conscious Mind Records movement to spread awareness and positivity across the globe.  We are a local independant record label based in Orlando, FL, and reaching out to as many people as possible is our main goal.  We hope you enjoy what the site has to offer and hope to see you out at one of our nummerous events.</p>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <div id="logOut" class="reveal-modal">
+      <p>Are you sure you want to log out?</p>
+      <button id="yesButton">Yes</button>
+      <button id="noButton">No</button>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    
+    <script src="js/jquery.reveal.js" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+    <script src="js/blueimp-gallery.min.js"></script> 
+    
+  </body>
+</html>

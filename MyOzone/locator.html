@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venue Locator</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/reveal.css" type="text/css">
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <script src="js/modernizr.js" type="text/javascript"></script>
+    <script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
+  </head>
+
+  <body> 
+  	<div id="container">
+      <div class="welcome">
+    		<a href="#"><h1>The <strong>O</strong>zone</h1></a>
+        <a href="#" id="outButton" data-reveal-id="logOut">Log Out</a>
+      </div>
+
+      <header>
+        <nav>
+          <ul>
+            <li><a href="welcome.html" class="gNav">Current Events</a></li>
+            <li><a href="#" class="gNav">Venue Locator</a></li>
+            <li><a href="videos.html" class="gNav">Video Gallery</a></li>
+            <li><a href="#" data-reveal-id="aboutUs" class="gNav">About Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+      </div>
+
+      <h2 class="heading">Orlando's Hottest Venue Locations</h2>
+      <p class="headingP">Choose a Venue from the list:</p>
+      <ul class="venueListings">
+        <li><a href="#" id="peacock">The Peacock Room</a></li>
+        <li><a href="#" id="austins">Austin's Coffee House</a></li>
+        <li><a href="#" id="haven">The Haven Lounge</a></li>
+        <li><a href="#" id="beacham">The Beacham</a></li>
+        <li><a href="#" id="firestone">Firestone Live</a></li>
+        <li><a href="#" id="vain">Club Vain</a></li>
+        <li><a href="#" id="bullet">Bullitt Bar</a></li>
+      </ul>
+      <h3 class="venueNames1 hideIt">The Peacock Room</h3>
+      <canvas id="Canvas1" class="graphHide1" width="485" height="400">
+        <img id="img1" src="img/peacock.jpg" width="477" height="400" class="graphHide1">
+      </canvas>
+      <h3 class="venueNames2 hideIt">Austin's Coffee House</h3>
+      <canvas id="Canvas2" class="graphHide2" width="485" height="400">
+        <img id="img2" src="img/austinsHouse.jpg" width="477" height="400" class="graphHide2">
+      </canvas>
+      <h3 class="venueNames3 hideIt">The Haven Lounge</h3>
+      <canvas id="Canvas3" class="graphHide3" width="485" height="400">
+        <img id="img3" src="img/havenLounge.jpg" width="477" height="400" class="graphHide3">
+      </canvas>
+      <h3 class="venueNames4 hideIt">The Beacham</h3>
+      <canvas id="Canvas4" class="graphHide4" width="485" height="400">
+        <img id="img4" src="img/theBeacham.jpg" width="477" height="400" class="graphHide4">
+      </canvas>
+      <h3 class="venueNames5 hideIt">Firestone Live</h3>
+      <canvas id="Canvas5" class="graphHide5" width="485" height="400">
+        <img id="img5" src="img/firestoneLive.jpg" width="477" height="400" class="graphHide5">
+      </canvas>
+      <h3 class="venueNames6 hideIt">Club Vain</h3>
+      <canvas id="Canvas6" class="graphHide6" width="485" height="400">
+        <img id="img6" src="img/clubVain.jpg" width="477" height="400" class="graphHide6">
+      </canvas>
+      <h3 class="venueNames7 hideIt">Bullitt Bar</h3>
+      <canvas id="Canvas7" class="graphHide7" width="485" height="400">
+        <img id="img7" src="img/bullitt.jpg" width="477" height="400" class="graphHide7">
+      </canvas>
+
+      <canvas id="graphSpace1" class="graphHide1" width="430" height="400"></canvas>
+      <canvas id="graphSpace2" class="graphHide2" width="430" height="400"></canvas>
+      <canvas id="graphSpace3" class="graphHide3" width="430" height="400"></canvas>
+      <canvas id="graphSpace4" class="graphHide4" width="430" height="400"></canvas>
+      <canvas id="graphSpace5" class="graphHide5" width="430" height="400"></canvas>
+      <canvas id="graphSpace6" class="graphHide6" width="430" height="400"></canvas>
+      <canvas id="graphSpace7" class="graphHide7" width="430" height="400"></canvas>
+
+      <div id="map3"></div>
+      <input type="hidden" id="lat3" value="28.59646127369233">
+      <input type="hidden" id="lng3" value="-81.30133632659908">
+      <input type="hidden" id="lat4" value="28.562895">
+      <input type="hidden" id="lng4" value="-81.364244">
+      <input type="hidden" id="lat5" value="28.593178">
+      <input type="hidden" id="lng5" value="-81.361418">
+      <input type="hidden" id="lat6" value="28.604876">
+      <input type="hidden" id="lng6" value="-81.298841">
+      <input type="hidden" id="lat7" value="28.542981">
+      <input type="hidden" id="lng7" value="-81.379167">
+      <input type="hidden" id="lat8" value="28.5506255">
+      <input type="hidden" id="lng8" value="-81.3793145">
+      <input type="hidden" id="lat9" value="28.541734">
+      <input type="hidden" id="lng9" value="-81.377657">
+      <input type="hidden" id="lat10" value="28.541446">
+      <input type="hidden" id="lng10" value="-81.37826">
+      <p class="headingP2">Or type in an address to see the Venue location:</p>
+      <input type="text" id="address3" placeholder="3300 University Blvd, Winter Park, FL"> 
+
+      <footer>
+        <p><em>The Ozone 2014</em> by Kareem K. Beazer</p>
+      </footer>
+  	</div>
+
+      
+      <div id="aboutUs" class="reveal-modal">
+        <p>The Ozone is a website developed for anyone that lives in the greater Orlando area.  It is an extension of the Conscious Mind Records movement to spread awareness and positivity across the globe.  We are a local independant record label based in Orlando, FL, and reaching out to as many people as possible is our main goal.  We hope you enjoy what the site has to offer and hope to see you out at one of our nummerous events.</p>
+        <a class="close-reveal-modal">&#215;</a>
+      </div> 
+
+      <div id="logOut" class="reveal-modal">
+        <p>Are you sure you want to log out?</p>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+    </div>
+
+    <script src="js/barGraph.js"></script>
+    <script src="js/jquery.reveal.js" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+    <script src="js/blueimp-gallery.min.js"></script> 
+    <script src="js/geolocation.edit.js"></script>
+   
+  </body>
+</html>

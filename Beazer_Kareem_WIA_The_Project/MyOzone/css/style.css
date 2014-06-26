@@ -1,0 +1,274 @@
+body{ 
+  font-family: Arial; 
+  background: url(../img/crowd-back.jpg)fixed;
+}
+h1, h2{ 
+  margin-top: 0; 
+}
+p{ 
+  font-family: 'Source Sans Pro', sans-serif;
+  /*color: #ccc; lovely shade of grey */
+  color: #2c3e83;
+  line-height: 1.5; 
+}
+a{
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #a5b1dd;
+  margin: 0;
+}
+footer{
+  text-align: center;
+  background: #2c3e83;
+}
+footer p{
+ color: #a5b1dd;
+ padding: 20px;
+}
+footer em{
+  color: #fff;
+  letter-spacing: 1px;
+}
+#container{ 
+  width: 940px; 
+  padding: 0; 
+  margin: 0 auto; 
+  background: #fff; 
+}
+.panel{
+  visibility: hidden;
+  width: 220px;
+  padding: 20px;
+  background-color: #333;
+  color: #efefef;
+  box-shadow: inset 0 0 5px 5px #222;
+}
+.landing{
+  text-align: center;
+  margin: 80px auto;
+}
+.landing h1{
+  background: #2c3e83;
+  padding: 80px;
+  font-family: 'Fjalla One', sans-serif; 
+  font-size: 60px;
+  color: #fff;
+}
+.landing strong{
+  color: #a5b1dd;
+}
+.members{
+  float: right;
+  padding-right: 20px;
+  position: relative;
+  top: -250px;
+  color: #a5b1dd;
+}
+#tagline{
+  padding-left: 70px;
+  font-family: 'Fjalla One', sans-serif;
+  color: #2c3e83; 
+}
+.slideShow{
+  color: #a5b1dd;
+  font-variant: small-caps;
+  font-size: 20px;
+  display: inline-block;
+}
+
+/*Sign In modal panel --start-- */
+#signIn h1{
+  font-family: 'Fjalla One', sans-serif;
+  color: #2c3e83;
+}
+#signIn input{
+  width: 60%;
+  padding: 5px;
+}
+#signIn label{
+  display: inline-block;
+ /* color: red;*/
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #2c3e83;
+  width: 100%;
+  padding-top: 5px;
+}
+#logButton{
+  display: block;
+  margin: 5px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #a5b1dd;
+  background: #2c3e83;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 100px;
+}
+.tinyText{
+  margin-top: 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #2c3e83;
+}
+/*Sign In modal panel --end-- */
+
+/*Registration modal panel --start-- */
+#register h1{
+  font-family: 'Fjalla One', sans-serif;
+  color: #2c3e83;
+}
+#register input{
+  width: 60%;
+  padding: 5px;
+}
+#register label{
+  display: inline-block;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #2c3e83;
+  width: 100%;
+  padding-top: 5px;
+}
+#regButton{
+  display: block;
+  margin-top: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #a5b1dd;
+  background: #2c3e83;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 100px;
+}
+/*Registration modal panel --end-- */
+
+/*Global Navigation Styling --start--*/
+nav ul{
+  background: #ccc;
+  padding: 10px 0;
+  margin: 0 auto;
+  border-bottom: 1px solid #f49c55;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  width: 218px;
+}
+.gNav{
+  color: #2c3e83;
+}
+/*Global Navigation Styling --end--*/
+
+.welcome h1{
+  font-family: 'Fjalla One', sans-serif;
+  background: #2c3e83;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+}
+.welcome strong{
+  color: #a5b1dd;
+}
+#outButton{
+  float: right;
+  position: relative;
+  top: -50px;
+  right: 10px;
+}
+#links{
+  text-align: center;
+}
+.slidesBack{
+  background: #a5b1dd;
+  padding: 20px 0;
+  border-bottom: 1px solid #f49c55;
+}
+#main h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #2c3e83;
+  padding: 10px;
+}
+#main h3{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #a5b1dd;
+  padding: 10px;
+  display: block;
+  border-top: 3px solid #ccc;
+}
+#main p{
+  padding-left: 10px;
+  width: 350px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 2em;
+}
+.flyers{
+  margin-left: 10px;
+  padding: 20px;
+  background: #f49c55; 
+}
+.heading{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #2c3e83;
+  padding: 10px;
+  margin-bottom: 0;
+}
+.headingP{
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0 10px;
+  margin: 0;
+}
+.headingP2{
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0 10px;
+  margin: 0;
+  display: inline-block;
+}
+.venueListings{
+  padding-left: 10px;
+}
+.venueListings li{
+  list-style: none;
+}
+#map3{
+  width: 920px;
+  height: 320px;
+  margin: 10px;
+}
+#address3{
+  margin-left: 10px;
+  width: 320px;
+  display: inline-block;
+}
+.venueNames1, .venueNames2, .venueNames3, .venueNames4, .venueNames5, .venueNames6, .venueNames7{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #2c3e83;
+  padding: 10px;
+  display: block;
+  border-top: 3px solid #ccc;
+}
+.graphHide1, .graphHide2, .graphHide3, .graphHide4, .graphHide5, .graphHide6, .graphHide7{
+  display: none;
+  background: #ccc;
+}
+#graphSpace1, #graphSpace2, #graphSpace3, #graphSpace4, #graphSpace5, #graphSpace6, #graphSpace7{  
+  background: #ccc;
+}
+.hideIt{
+  display: none;
+}
+.artists{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #a5b1dd;
+  padding: 10px;
+  /*display: inline-block;*/
+  border-top: 3px solid #ccc;
+}
+#videos{
+  display: inline-block;
+  margin-left: 17px;
+}
+#videos img{
+  width: 450px;
+  display: inline-block;
+}
+.lineUp{
+  display: inline-block;
+}

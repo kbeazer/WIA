@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Ozone</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
+  </head>
+
+  <body> 
+  	<div id="container">
+      <div class="landing">
+    		<a href="#"><h1>The <strong>O</strong>zone</h1></a>
+        <a href="#" data-reveal-id="signIn" class="members">Sign In</a>
+        <h2 id="tagline">Your town. Your world. Your life.</h2>
+        <p><a href="#" data-reveal-id="register" class="signLink">Sign Up for FREE  </a>and get connected today.</p>
+      </div>
+
+
+      <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+          <div class="slides"></div>
+          <h3 class="title"></h3>
+          <a class="prev">‹</a>
+          <a class="next">›</a>
+          <a class="close">×</a>
+          <a class="play-pause"></a>
+          <ol class="indicator"></ol>
+      </div>
+
+      <div id="links">
+        <p class="slideShow">Take the Slideshow Tour</p>
+        <a href="img/larue.jpg" title="Conscious Mind Records" class="hideIt">
+            <img src="img/larue_thumb.jpg" alt="live performance">
+        </a>
+        <a href="img/strangeGib.jpg" title="Strange Gibberish" class="hideIt">
+            <img src="img/strangeGib_thumb.jpg" alt="Merchandise table">
+        </a>
+        <a href="img/turntables.jpg" title="Old School DJ Performances" class="hideIt">
+            <img src="img/turntables_thumb.jpg" alt="turntables">
+        </a>
+        <a href="img/mixboard.jpg" title="Quality Sound and Equipment" class="hideIt">
+            <img src="img/mixboard_thumb.jpg" alt="mixboard">
+        </a>
+        <a href="img/group.jpg" title="Conscious Mind Records Family" class="hideIt">
+            <img src="img/group_thumb.jpg" alt="group picture">
+        </a>
+        <a href="img/performance.jpg" title="Live Venue Performances" class="hideIt">
+            <img src="img/performance_thumb.jpg" alt="live performance">
+        </a>
+      </div>
+  	</div>
+
+
+    <div id="signIn" class="reveal-modal">
+      <h1>Members</h1>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="user" placeholder="Please enter your user name here" required>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass" placeholder="Please enter your password here" required>
+        <button id="logButton">Sign In</button>
+        <small class="tinyText">Not a member? <a  data-reveal-id="register">Click Here</a></small>
+      </form>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <div id="register" class="reveal-modal">
+      <h1>Registration</h1>
+      <form>
+        <label for="fName">First name:</label>
+        <input type="text" name="fName" id="fName" placeholder="Please enter your first name here" required>
+        <label for="lName">Last name:</label>
+        <input type="text" name="lName" id="lName" placeholder="Please enter your last name here">
+        <label for="uName">User name:</label>
+        <input type="text" name="uName" id="uName" placeholder="Please enter your last name here">
+        <label for="email">Email address:</label>
+        <input type="email" name="email" id="email" placeholder="Please enter your email address here" required>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="password" placeholder="Please enter your password here"required>
+        <label for="pass">Confirm:</label>
+        <input type="password" name="pass" placeholder="Please confirm your password here" required>
+        <button id="regButton">Sign Up</button>
+      </form>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/jquery.reveal.js" type="text/javascript"></script>
+    <script src="js/blueimp-gallery.min.js"></script>
+  </body>
+</html>
